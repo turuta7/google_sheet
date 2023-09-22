@@ -21,22 +21,22 @@ const main = async () => {
   // update name title
   // await doc.updateProperties({ title: "ЗП" });
 
-  // // create Sheet by name
-  // const addNameCreate = "TEST222";
-  // const sheetNameForAdd = doc.sheetsByTitle[addNameCreate];
-  // !sheetNameForAdd && (await doc.addSheet({ title: addNameCreate }));
+  // create Sheet by name
+  const addNameCreate = "TEST222";
+  const sheetNameForAdd = doc.sheetsByTitle[addNameCreate];
+  !sheetNameForAdd && (await doc.addSheet({ title: addNameCreate }));
 
-  // //update name sheetsByTitle -----------
-  // const updateNameSheet = "TEST222";
-  // const newNameSheet = "new TEST22";
-  // const sheetNameForUpdate = doc.sheetsByTitle[updateNameSheet];
-  // sheetNameForUpdate &&
-  //   (await sheetNameForUpdate.updateProperties({ title: newNameSheet }));
+  //update name sheetsByTitle -----------
+  const updateNameSheet = "TEST222";
+  const newNameSheet = "new TEST22";
+  const sheetNameForUpdate = doc.sheetsByTitle[updateNameSheet];
+  sheetNameForUpdate &&
+    (await sheetNameForUpdate.updateProperties({ title: newNameSheet }));
 
-  // //delete Sheet by name
-  // const deleteNameSheet = "TEST222";
-  // const sheetNameForDelete = doc.sheetsByTitle[deleteNameSheet];
-  // sheetNameForDelete && (await sheetNameForDelete.delete());
+  //delete Sheet by name
+  const deleteNameSheet = "TEST222";
+  const sheetNameForDelete = doc.sheetsByTitle[deleteNameSheet];
+  sheetNameForDelete && (await sheetNameForDelete.delete());
 
   // for (let i = 0; i < doc.sheetsByIndex.length; i++) {
   //   const sheet = doc.sheetsByIndex[i];
